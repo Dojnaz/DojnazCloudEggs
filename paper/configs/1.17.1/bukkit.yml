@@ -21,7 +21,7 @@ settings:
   connection-throttle: 4000
   query-plugins: true
   deprecated-verbose: default
-  shutdown-message: Server closed | Powered By dojnaz.cloud
+  shutdown-message: Server closed | Powered by dojnaz.cloud
   minimum-api: none
 spawn-limits:
   monsters: 20
