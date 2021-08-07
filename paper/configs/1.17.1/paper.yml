@@ -97,34 +97,34 @@ world-settings:
     disable-teleportation-suffocation-check: false
     delay-chunk-unloads-by: 10s
     should-remove-dragon: false
-    max-auto-save-chunks-per-tick: 24
+    max-auto-save-chunks-per-tick: 8
     baby-zombie-movement-modifier: 0.5
     optimize-explosions: true
     fixed-chunk-inhabited-time: -1
     use-vanilla-world-scoreboard-name-coloring: false
-    remove-corrupt-tile-entities: false
+    remove-corrupt-tile-entities: true
     experience-merge-max-value: -1
     prevent-moving-into-unloaded-chunks: true
     count-all-mobs-for-spawning: false
-    per-player-mob-spawns: false
+    per-player-mob-spawns: true
     ender-dragons-death-always-places-dragon-egg: false
     allow-using-signs-inside-spawn-protection: false
     falling-block-height-nerf: 0
     tnt-entity-height-nerf: 0
     filter-nbt-data-from-spawn-eggs-and-related: true
-    max-entity-collisions: 8
+    max-entity-collisions: 2
     disable-creeper-lingering-effect: false
     duplicate-uuid-resolver: saferegen
     duplicate-uuid-saferegen-delete-range: 32
     phantoms-do-not-spawn-on-creative-players: true
     phantoms-only-attack-insomniacs: true
-    update-pathfinding-on-block-update: true
+    update-pathfinding-on-block-update: false
     fix-wither-targeting-bug: false
     allow-player-cramming-damage: false
     seed-based-feature-search: true
     seed-based-feature-search-loads-chunks: true
     water-over-lava-flow-speed: 5
-    grass-spread-tick-rate: 6
+    grass-spread-tick-rate: 4
     use-faster-eigencraft-redstone: true
     nether-ceiling-void-damage-height: 0
     fix-items-merging-through-walls: false
@@ -137,31 +137,31 @@ world-settings:
     portal-search-radius: 128
     portal-create-radius: 16
     portal-search-vanilla-dimension-scaling: true
-    container-update-tick-rate: 3
+    container-update-tick-rate: 1
     disable-thunder: false
     skeleton-horse-thunder-spawn-chance: 0.01
     disable-ice-and-snow: false
     disable-explosion-knockback: false
-    fix-climbing-bypassing-cramming-rule: false
+    fix-climbing-bypassing-cramming-rule: true
     keep-spawn-loaded-range: 10
     prevent-tnt-from-moving-in-water: false
     show-sign-click-command-failure-msgs-to-player: false
     iron-golems-can-spawn-in-air: false
     max-leash-distance: 10.0
     armor-stands-tick: false
-    non-player-arrow-despawn-rate: -1
-    creative-arrow-despawn-rate: -1
+    non-player-arrow-despawn-rate: 60
+    creative-arrow-despawn-rate: 60
     spawner-nerfed-mobs-should-jump: false
     entities-target-with-follow-range: false
     zombies-target-turtle-eggs: true
     zombie-villager-infection-chance: -1.0
     all-chunks-are-slime-chunks: false
-    mob-spawner-tick-rate: 4
+    mob-spawner-tick-rate: 2
     map-item-frame-cursor-limit: 128
     light-queue-size: 20
     auto-save-interval: -1
     enable-treasure-maps: true
-    treasure-maps-return-already-discovered: false
+    treasure-maps-return-already-discovered: true
     generator-settings:
       flat-bedrock: false
     entity-per-chunk-save-limit:
@@ -215,7 +215,7 @@ world-settings:
       MaximumTicks: 600
     despawn-ranges:
       soft: 32
-      hard: 128
+      hard: 72
     frosted-ice:
       enabled: true
       delay:
@@ -233,7 +233,7 @@ world-settings:
       skeletons: false
     hopper:
       cooldown-when-full: true
-      disable-move-event: false
+      disable-move-event: true
     mob-effects:
       undead-immune-to-certain-effects: true
       spiders-immune-to-poison-effect: true
@@ -280,7 +280,7 @@ world-settings:
       - stone
       - oak_planks
     viewdistances:
-      no-tick-view-distance: -1
+      no-tick-view-distance: 6
     squid-spawn-height:
       maximum: 0.0
     unsupported-settings:
