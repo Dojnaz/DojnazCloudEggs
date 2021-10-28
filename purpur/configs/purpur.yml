@@ -16,7 +16,7 @@ settings:
   lagging-threshold: 19.0
   allow-water-placement-in-the-end: true
   tps-catchup: true
-  server-mod-name: §3§lDojnaz.cloud§r
+  server-mod-name: §b§lDojnaz.Cloud§r
   disable-give-dropping: false
   broadcasts:
     advancement:
