@@ -1,0 +1,4 @@
+listeners:
+- query_port: 25573
+  host: 0.0.0.0:25573
+  motd: '&3&lPowered by Dojnaz.Cloud'
