@@ -35,10 +35,10 @@ settings:
 messages:
   whitelist: You are not whitelisted on this server!
   unknown-command: Unknown command. Type "/help" for help.
-  server-full: The server is full!
+  server-full: The server is full! | Powered By Dojnaz.Cloud
   outdated-client: Outdated client! Please use {0}
   outdated-server: Outdated server! I'm still on {0}
-  restart: Server is restarting | Powered By dojnaz.cloud
+  restart: Server is restarting | Powered By Dojnaz.Cloud
 advancements:
   disable-saving: false
   disabled:
