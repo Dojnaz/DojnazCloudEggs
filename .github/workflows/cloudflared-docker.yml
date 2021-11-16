@@ -3,7 +3,7 @@ name: Cloudflared Docker
 on:
   push:
     branches:
-      - 'master'
+      - 'main'
 
 jobs:
   docker:
