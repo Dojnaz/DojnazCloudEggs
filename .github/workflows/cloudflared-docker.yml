@@ -29,4 +29,4 @@ jobs:
           push: true
           tags: vbdojnaz/pterodactyl-cloudflared:latest
           context: ./cloudflared/docker
-          file: cloudflared/docker/Dockerfile
+          file: ./cloudflared/docker/Dockerfile
