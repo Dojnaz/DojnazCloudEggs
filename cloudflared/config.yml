@@ -1,0 +1,7 @@
+tunnel: TUNNEL_ID
+credentials-file: /home/container/.cloudflared/TUNNEL_ID.json
+
+ingress:
+  - hostname: dojnaz.cloud
+    service: http://127.0.0.1
+  - service: http_status:404
