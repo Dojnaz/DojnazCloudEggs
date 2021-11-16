@@ -17,6 +17,6 @@ ENV  USER=container HOME=/home/container
 
 WORKDIR /home/container
 
-COPY ./entrypoint.sh /cloudflared/docker/entrypoint.sh
+COPY ./cloudflared/docker/entrypoint.sh /entrypoint.sh
 
 CMD ["/bin/bash", "/entrypoint.sh"]
