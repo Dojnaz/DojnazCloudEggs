@@ -1,0 +1,29 @@
+{
+  "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+  "meta": {
+    "version": "PTDL_v1",
+    "update_url": null
+  },
+  "exported_at": "2022-01-20T12:42:41+01:00",
+  "name": "Cloudflared",
+  "author": "hi@dojnaz.cloud",
+  "description": null,
+  "features": null,
+  "images": ["vbdojnaz/pterodactyl-cloudflared"],
+  "file_denylist": [],
+  "startup": "./start.sh",
+  "config": {
+    "files": "{\r\n    \"config.yml\": {\r\n        \"parser\": \"yaml\"\r\n    }\r\n}",
+    "startup": "{\r\n    \"done\": \"registered\"\r\n}",
+    "logs": "{\r\n    \"custom\": false,\r\n    \"location\": \"proxy.log.0\"\r\n}",
+    "stop": "^C"
+  },
+  "scripts": {
+    "installation": {
+      "script": "#!/bin/bash\r\n# Cloudflared installation script\r\n#\r\n# Server Files: /mnt/server\r\n\r\napt update\r\napt install -y git curl jq file unzip make gcc g++ python python-dev libtool wget\r\n\r\nmkdir -p /mnt/server\r\ncd /mnt/server\r\n\r\ncurl -o start.sh https://raw.githubusercontent.com/Dojnaz/DojnazCloudEggs/main/cloudflared/start.sh\r\nsed -i -e 's/\\r$//' start.sh\r\nchmod 755 start.sh",
+      "container": "node:15-buster-slim",
+      "entrypoint": "bash"
+    }
+  },
+  "variables": []
+}
