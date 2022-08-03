@@ -1,6 +1,6 @@
 # DojnazCloudEggs
 
-## Cloudflared
+## Cloudflared [![Cloudflared Docker](https://github.com/Dojnaz/DojnazCloudEggs/actions/workflows/cloudflared-docker.yml/badge.svg)](https://github.com/Dojnaz/DojnazCloudEggs/actions/workflows/cloudflared-docker.yml)
 
 Cloudflared is a tunneling daemon that proxies traffic from the Cloudflare network to your origins. It creates a direct tunnel to Cloudflare edge servers, which means there are no incomming requests going through your firewalls. Your server can be isolated, while still being able to serve HTTP(S) requests through Cloudflare's servers.
 
