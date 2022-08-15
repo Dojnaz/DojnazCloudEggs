@@ -29,4 +29,4 @@ jobs:
         with:
           push: true
           tags: vbdojnaz/nodejs18-puppeteer:latest
-          file: nodejs18-puppeteer/Dockerfile
+          file: nodejs18-puppeteer/8/Dockerfile
