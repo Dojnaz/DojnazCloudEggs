@@ -28,5 +28,5 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: vbdojnaz/pterodactyl-cloudflared:latest
+          tags: vbdojnaz/nodejs18-puppeteer:latest
           file: nodejs18-puppeteer/Dockerfile
