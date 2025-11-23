@@ -3,7 +3,7 @@
 # Environment: Java
 # Minimum Panel Version: 0.6.0
 # ----------------------------------
-FROM ghcr.io/pterodactyl/yolks:debian
+FROM ghcr.io/pterodactyl/yolks:alpine
 
 MAINTAINER Dojnaz Cloud, <hi@dojnaz.cloud>
 
