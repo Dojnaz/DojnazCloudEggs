@@ -3,7 +3,7 @@
 # Environment: Java
 # Minimum Panel Version: 0.6.0
 # ----------------------------------
-FROM quay.io/parkervcp/pterodactyl-images:base_debian
+FROM ghcr.io/pterodactyl/yolks:debian
 
 MAINTAINER Dojnaz Cloud, <hi@dojnaz.cloud>
 
