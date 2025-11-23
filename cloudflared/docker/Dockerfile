@@ -7,9 +7,8 @@ FROM ghcr.io/pterodactyl/yolks:alpine
 
 MAINTAINER Dojnaz Cloud, <hi@dojnaz.cloud>
 
-RUN apt install -y curl ca-certificates openssl git tar bash sqlite fontconfig \
-    && wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb \
-    && dpkg -i cloudflared-linux-amd64.deb
+RUN wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 -O /usr/bin/cloudflared \
+    && chmod +x /usr/bin/cloudflared
 
 USER container
 ENV  USER=container HOME=/home/container
