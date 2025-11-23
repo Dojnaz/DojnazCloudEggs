@@ -7,8 +7,8 @@ FROM ghcr.io/pterodactyl/yolks:alpine
 
 MAINTAINER Dojnaz Cloud, <hi@dojnaz.cloud>
 
-RUN wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 -O /usr/bin/cloudflared \
-    && chmod +x /usr/bin/cloudflared
+RUN wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 -O ./cloudflared \
+    && chmod +x ./cloudflared
 
 USER container
 ENV  USER=container HOME=/home/container
